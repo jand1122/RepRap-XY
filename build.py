@@ -1,9 +1,6 @@
 import os
 import FreeCAD
 import Part
-import ImportGui
-import ImportGui
-import glob
 
 def ConvertToStepAndStl(path,name):
 	input = path + "/src/" + name + ".FCStd"
