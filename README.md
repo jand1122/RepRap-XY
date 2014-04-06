@@ -17,6 +17,7 @@ Use at your own risk.
 The file src/core-XY.FCStd is the complete assembly in FreeCAD format.
 The file src/core-XY.vc3 is the complete assembly in VIACAD format.
 
-For now the STL folder is empty, to prevent people to start printing before checking the design.
+The file build.py will mirror a few parts and generate the STEP and STL files.
+Just open the file in FreeCAD and run a a macro.
 
 Have fun. 
