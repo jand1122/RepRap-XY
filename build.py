@@ -1,16 +1,23 @@
 import os
 import FreeCAD
 import Part
+import Mesh
 
-def ConvertToStepAndStl(path,name):
+def ConvertToStepAndStl(path,name,tess=0.0):
 	input = path + "/src/" + name + ".FCStd"
 	stl = path + "/stl/" + name + ".stl"
 	step = path + "/step/" + name + ".step"
 	doc = FreeCAD.openDocument(input);
-	doc.ActiveObject.Shape.exportStl(stl)
-	doc.ActiveObject.Shape.exportStep(step)
+	s = doc.ActiveObject.Shape
+	s.exportStep(step)
+	print("tess = " + str(tess))
+	if tess == 0.0:
+		s.exportStl(stl)
+	else:
+		m=Mesh.Mesh()
+		m.addFacets(s.tessellate(tess))
+		m.write(stl)
 	FreeCAD.closeDocument(doc.Name)
-
 
 def MirrorPart(path, name):
 	
@@ -35,7 +42,7 @@ path=os.path.dirname(path)
 files = []
 for f in os.listdir(path + "/src"):
 	if f.lower().endswith(".fcstd"):
-		if not f.startswith("core-XY"):
+		if not f.startswith("RepRap-XY"):
 			files.append(f[:-6])
 	
 #
@@ -51,9 +58,12 @@ for f in files:
 # STEP files and STL files are generated
 #
 PartNames = [ "belt-clamp",
-			 "idler-block", "idler-block-top",
-			 "motor-block", "motor-block-top",
-			 "Z-motor-mount", "Z-block"  ]
+			 "idler-block",
+			 "idler-block-top",
+			 "motor-block",
+			 "motor-block-top",
+			 "Z-motor-mount", 
+			 "Z-block-1"  ]
 for name in PartNames:
 	print "MirrorPart(" + path + "," + name + ")"	
 	MirrorPart(path,name)
