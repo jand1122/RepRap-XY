@@ -14,8 +14,8 @@ I decided to build a printer based on this design, but use printed parts instead
 THIS IS A WORK IN PROGRESS - IT IS NOT YET FINISHED.
 Use at your own risk.
 
-The file src/core-XY.FCStd is the complete assembly in FreeCAD format.
-The file src/core-XY.vc3 is the complete assembly in VIACAD format.
+The file src/RepRap-XY.FCStd is the complete assembly in FreeCAD format.
+The file src/RepRap-XY.vc3 is the complete assembly in VIACAD format.
 
 The file build.py will mirror a few parts and generate the STEP and STL files.
 Just open the file in FreeCAD and run a a macro.
