@@ -4,7 +4,7 @@ FILE_DESCRIPTION(('FreeCAD Model'),'2;1');
 FILE_NAME(
 'C:\\Users\\jand\\Google 
 Drive\\reprap\\ontwerpen\\RepRap-XY/step/belt-clamp.step',
-  '2014-04-20T10:57:32',('FreeCAD'),('FreeCAD'),
+  '2014-05-08T19:06:54',('FreeCAD'),('FreeCAD'),
   'Open CASCADE STEP processor 6.3','FreeCAD','Unknown');
 FILE_SCHEMA(('AUTOMOTIVE_DESIGN_CC2 { 1 2 10303 214 -1 1 5 4 }'));
 ENDSEC;

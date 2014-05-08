@@ -11,8 +11,11 @@ When I saw this printer I thought, this is the printer I want. It has all the fe
 It only has one problem for me, it is made from CNC-ed aluminium and I do not have access to a CNC machine.
 I decided to build a printer based on this design, but use printed parts instead of aluminium parts. That is what you will find here.
 
-THIS IS A WORK IN PROGRESS - IT IS NOT YET FINISHED.
-Use at your own risk.
+This is a work in progress, Use at your own risk.
+
+I made one and it is working just fine.
+I did not yet make something for the X and Y endstops.
+A simple adjustable Z endstop exists and does the job for adjusting the first layer height.
 
 The file src/RepRap-XY.FCStd is the complete assembly in FreeCAD format.
 The file src/RepRap-XY.vc3 is the complete assembly in VIACAD format.
