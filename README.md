@@ -23,4 +23,7 @@ The file src/RepRap-XY.vc3 is the complete assembly in VIACAD format.
 The file build.py will mirror a few parts and generate the STEP and STL files.
 Just open the file in FreeCAD and run a a macro.
 
+In the doc folder you will find a BOM. This BOM is not generated from the model but hand made, so be carefull
+You will not (yet?) find build instructions there.  Have a look at the sourcefile RepRap-XY.FCStd (FreeCAD) and RepRap-XY.vc3 to see how everything fits together.
+
 Have fun. 
