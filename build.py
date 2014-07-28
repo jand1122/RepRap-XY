@@ -50,7 +50,8 @@ for f in os.listdir(path + "/src"):
 #
 for f in files:
 	print "ConvertToStepAndStl(" + path + "," + f + ")"	
-	ConvertToStepAndStl(path,f)
+	if not f.startswith("washer-M4"):
+		ConvertToStepAndStl(path,f)
 
 #
 # A few parts needs a mirrored variant
