@@ -26,4 +26,8 @@ Just open the file in FreeCAD and run a a macro.
 In the doc folder you will find a BOM. This BOM is not generated from the model but hand made, so be carefull
 You will not (yet?) find build instructions there.  Have a look at the sourcefile RepRap-XY.FCStd (FreeCAD) and RepRap-XY.vc3 to see how everything fits together.
 
+To see some videos of my printer have a look at my youtube channel: https://www.youtube.com/channel/UCOyTdQOCCLdy45FtSlam_3A/feed
+and some images at my imgur album: http://jand1122.imgur.com/
+
+
 Have fun. 

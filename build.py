@@ -44,6 +44,9 @@ for f in os.listdir(path + "/src"):
 	if f.lower().endswith(".fcstd"):
 		if not f.startswith("RepRap-XY"):
 			files.append(f[:-6])
+
+for f in os.listdir(path + "/src/alt"):
+	files.append("alt/" + f[:-6])
 	
 #
 # Convert all FreeCAD files to STEP and STL files
