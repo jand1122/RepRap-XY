@@ -7,6 +7,7 @@ def ConvertToStepAndStl(path,name,tess=0.0):
 	input = path + "/src/" + name + ".FCStd"
 	stl = path + "/stl/" + name + ".stl"
 	step = path + "/step/" + name + ".step"
+	print("Input = " + input)	
 	doc = FreeCAD.openDocument(input);
 	s = doc.ActiveObject.Shape
 	s.exportStep(step)
@@ -45,8 +46,6 @@ for f in os.listdir(path + "/src"):
 		if not f.startswith("RepRap-XY"):
 			files.append(f[:-6])
 
-for f in os.listdir(path + "/src/alt"):
-	files.append("alt/" + f[:-6])
 	
 #
 # Convert all FreeCAD files to STEP and STL files

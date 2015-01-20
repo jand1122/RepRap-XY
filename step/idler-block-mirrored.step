@@ -4,7 +4,7 @@ FILE_DESCRIPTION(('FreeCAD Model'),'2;1');
 FILE_NAME(
 'C:\\Users\\jand\\Google 
 Drive\\reprap\\ontwerpen\\RepRap-XY/step/idler-block-mirrored.step',
-  '2014-11-12T21:43:57',('FreeCAD'),('FreeCAD'),
+  '2014-12-08T20:35:44',('FreeCAD'),('FreeCAD'),
   'Open CASCADE STEP processor 6.6','FreeCAD','Unknown');
 FILE_SCHEMA(('AUTOMOTIVE_DESIGN_CC2 { 1 2 10303 214 -1 1 5 4 }'));
 ENDSEC;
@@ -17,8 +17,8 @@ DATA;
 #4 = PRODUCT_DEFINITION_SHAPE('','',#5);
 #5 = PRODUCT_DEFINITION('design','',#6,#9);
 #6 = PRODUCT_DEFINITION_FORMATION('','',#7);
-#7 = PRODUCT('Open CASCADE STEP translator 6.6 66',
-  'Open CASCADE STEP translator 6.6 66','',(#8));
+#7 = PRODUCT('Open CASCADE STEP translator 6.6 72',
+  'Open CASCADE STEP translator 6.6 72','',(#8));
 #8 = MECHANICAL_CONTEXT('',#2,'mechanical');
 #9 = PRODUCT_DEFINITION_CONTEXT('part definition',#2,'design');
 #10 = ADVANCED_BREP_SHAPE_REPRESENTATION('',(#11,#15),#1819);
